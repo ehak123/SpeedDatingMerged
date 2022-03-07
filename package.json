@@ -12,6 +12,7 @@
     "gray-matter": "^4.0.3",
     "helper": "^0.0.13",
     "helpers": "^0.0.6",
+    "jsx": "^0.9.89",
     "next": "latest",
     "node-downloader-helper": "^2.0.1",
     "node-helper": "^0.1.1",
