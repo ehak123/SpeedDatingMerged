@@ -4,7 +4,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
 import { Link } from 'logincomp';
 import { Layout } from 'logincomp/account';
-import { alertService, userService } from "../../../services";
+import { alertService, userService } from "../../../loginservices";
 
 
 export default Login;

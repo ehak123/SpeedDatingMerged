@@ -28,7 +28,7 @@ export default function StartPageView({ allPostsData }) {
       <div className={utilStyles.container}>
         <header className={startpage.header}>
           <>
-            <section clasName={startpage.container}>
+            <section className={startpage.container}>
               <Image
                 priority
                 src="/images/icon400x400.jpg"

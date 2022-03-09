@@ -1,4 +1,4 @@
-import { userService } from 'services';
+import { userService } from 'loginservices';
 import { Link } from 'logincomp';
 
 export default Home;

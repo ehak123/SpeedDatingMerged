@@ -5,7 +5,7 @@ import * as Yup from 'yup';
 
 import { Link } from 'logincomp';
 import { Layout } from 'logincomp/account';
-import { userService, alertService } from 'services';
+import { userService, alertService } from 'loginservices';
 
 export default Register;
 
