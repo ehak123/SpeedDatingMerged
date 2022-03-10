@@ -4,7 +4,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
 
 import { Link } from 'logincomp';
-import { userService, alertService } from 'services';
+import { userService, alertService } from 'loginservices';
 
 export { AddEdit };
 
@@ -63,40 +63,40 @@ function AddEdit(props) {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="form-row">
-                <div className="form-group col">
+            <div className={form-row}>
+                <div className={form-group-col}>
                     <label>First Name</label>
                     <input name="firstName" type="text" {...register('firstName')} className={`form-control ${errors.firstName ? 'is-invalid' : ''}`} />
-                    <div className="invalid-feedback">{errors.firstName?.message}</div>
+                    <div className={invalid-feedback}>{errors.firstName?.message}</div>
                 </div>
-                <div className="form-group col">
+                <div className={form-group-col}>
                     <label>Last Name</label>
                     <input name="lastName" type="text" {...register('lastName')} className={`form-control ${errors.lastName ? 'is-invalid' : ''}`} />
-                    <div className="invalid-feedback">{errors.lastName?.message}</div>
+                    <div className={invalid-feedback}>{errors.lastName?.message}</div>
                 </div>
             </div>
-            <div className="form-row">
-                <div className="form-group col">
+            <div className={form-row}>
+                <div className={form-group-col}>
                     <label>Username</label>
                     <input name="username" type="text" {...register('username')} className={`form-control ${errors.username ? 'is-invalid' : ''}`} />
-                    <div className="invalid-feedback">{errors.email?.message}</div>
+                    <div className={invalid-feedback}>{errors.email?.message}</div>
                 </div>
-                <div className="form-group col">
+                <div className={form-group-col}>
                     <label>
                         Password
-                        {!isAddMode && <em className="ml-1">(Leave blank to keep the same password)</em>}
+                        {!isAddMode && <em className={ml-1}>(Leave blank to keep the same password)</em>}
                     </label>
                     <input name="password" type="password" {...register('password')} className={`form-control ${errors.password ? 'is-invalid' : ''}`} />
-                    <div className="invalid-feedback">{errors.password?.message}</div>
+                    <div className={invalid-feedback}>{errors.password?.message}</div>
                 </div>
             </div>
-            <div className="form-group">
-                <button type="submit" disabled={formState.isSubmitting} className="btn btn-primary mr-2">
+            <div className={form-group}>
+                <button type="submit" disabled={formState.isSubmitting} className={btn-primary}>
                     {formState.isSubmitting && <span className="spinner-border spinner-border-sm mr-1"></span>}
                     Save
                 </button>
                 <button onClick={() => reset(formOptions.defaultValues)} type="button" disabled={formState.isSubmitting} className="btn btn-secondary">Reset</button>
-                <Link href="/users" className="btn btn-link">Cancel</Link>
+                <Link href="/users" className={btn-btn-link}>Cancel</Link>
             </div>
         </form>
     );

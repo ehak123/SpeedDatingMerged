@@ -69,7 +69,7 @@ function Register() {
                             {formState.isSubmitting && <span className="spinner-border spinner-border-sm mr-1"></span>}
                             Register
                         </button>
-                        <Link href="/account/login" className="btn btn-link">Cancel</Link>
+                        <Link href="/login/account/login" className="btn btn-link">Cancel</Link>
                     </form>
                 </div>
             </div>

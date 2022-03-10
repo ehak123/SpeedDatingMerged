@@ -48,7 +48,9 @@ export default function StartPageView({ allPostsData }) {
           <section className={utilStyles.headingMd}>
             <p>Welcome to Stockholm Speed Dating, your interactive and modern matchmaker-service!</p>
           </section>
-          <section className={utilStyles.grid, utilStyles.container}>
+        
+          <section className={utilStyles.container}>
+            <div className={utilStyles.grid}>
             <a href="./login/account/register" className={utilStyles.card} disabled={this}>
               <h3>Become a member today &rarr;</h3>
               <p>Join our dating comunity and find your soulmate</p>
@@ -63,6 +65,7 @@ export default function StartPageView({ allPostsData }) {
               <h3>Coming Speed Dating events &rarr;</h3>
               <p>Check out all our fun up-comming event here!</p>
             </a>
+            </div>
           </section>
           <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
             <h2 className={utilStyles.headingLg}>News</h2>

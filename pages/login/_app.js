@@ -2,9 +2,9 @@ import 'next/document';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
-import 'styles/globals.css';
+// import 'styles/globals.css';
 
-import { userService } from 'services';
+import { userService } from 'loginservices';
 import { Nav, Alert } from 'logincomp';
 
 export default App;

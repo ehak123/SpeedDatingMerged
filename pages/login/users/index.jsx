@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import { Link, Spinner } from 'logincomp';
 import { Layout } from 'logincomp/users';
-import { userService } from 'services';
+import { userService } from 'loginservices';
 
 export default Index;
 
